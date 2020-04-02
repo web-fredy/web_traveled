@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "web-traveled"
+    }
+  },
+  "defaultProject": "web-traveled",
+  "cli": {
+    "analytics": "6d9e7b91-7f67-46a3-af65-703076a7d6e9"
+  }
 }
