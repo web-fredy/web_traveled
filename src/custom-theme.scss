@@ -3,16 +3,8 @@
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
 
-// Theme travel
+@import 'assets/css/home/bootstrap/bootstrap.scss';
 
-@import 'assets/css/home/animate.css';
-@import 'assets/css/home/magnific-popup.css';
-@import 'assets/css/home/aos.css';
-@import 'assets/css/home/bootstrap-datepicker.css';
-@import 'assets/css/home/jquery.timepicker.css';
-
-
-@import 'assets/css/home/style.scss';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
