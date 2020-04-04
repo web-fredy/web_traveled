@@ -1,0 +1,40 @@
+section {
+    background: linear-gradient(225deg, #fff 0%, #9d9d99 90%);
+    width: 100%;
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 500px;
+    
+}
+.header {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    height: 50px;
+}
+.content {
+    background-color: #dedede;
+    box-shadow: 3px 3px 10px #000;
+    padding: 2rem;
+    min-height: 250px;
+    width: 350px;
+}
+.retur {
+    margin-top: 1rem;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 300;
+    transition: ease-in 250ms;
+}
+.retur:hover {
+    color: rgb(160, 102, 102);
+}
+

@@ -1,1 +1,23 @@
-<p>login works!</p>
+<section>
+    <form action="" class="form" autocomplete="off">
+        <div class="content">
+            <h1 class="header">Iniciar sesion</h1>
+            <div class="form-group">
+                <mat-form-field class="w-100">
+                    <mat-label>Usuario</mat-label>
+                    <input matInput name="user">
+                    <mat-icon matSuffix>perm_identity</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="w-100">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput name="password">
+                    <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+            </div>
+            <button type="button" mat-raised-button color="primary" class="btn-block">Iniciar sesion</button>
+            <a routerLink="/home" class="retur">Regresar a la pagina de Inicio</a>
+        </div>
+    </form>
+</section>
