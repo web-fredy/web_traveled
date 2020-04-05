@@ -2,7 +2,7 @@ function plugin_home() {
   (function($) {
     "use strict";
     var $navbar = $(".myMenu"), y_pos = $navbar.offset().top, height = $navbar.height();
-    //scroll top 0 sticky
+
     $(document).scroll(function() {
         var scrollTop = $(this).scrollTop();
         if (scrollTop > 0) {

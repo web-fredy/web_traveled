@@ -1,89 +1,65 @@
 $break-width: 600px;
 html, body{
   height: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.section{
-  position: relative;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 1000px;
 }
 
 .myMenu{
+  // background-color:#eee;
   transition: all .5s ease;
-  font-size: 12px;
-  width: 100%;
-  z-index: 100;
-  position: absolute;
-  left: 0;
-  letter-spacing: 2px;
-  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  // font-size: 12px;
+  // width: 100%;
+  // z-index: 100;
+  // position: absolute;
+  // left: 0;
+  // line-height: 100px;
   -webkit-transition-property: background-color, box-shadow, line-height, height;
-    transition-property: background-color, box-shadow, line-height, height;
-    -webkit-transition-timing-function: cubic-bezier(.78,.13,.15,.86);
-    transition-timing-function: cubic-bezier(.78,.13,.15,.86);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  transition-property: background-color, box-shadow, line-height, height;
+  -webkit-transition-timing-function: cubic-bezier(.78,.13,.15,.86);
+  transition-timing-function: cubic-bezier(.78,.13,.15,.86);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   .marca{
-    line-height: 100px;
-    padding-left: 60px;
-    padding-right: 60px;
-    display: inline-block;
-    float: left;
-    font-size: 20px;
+    line-height: 60px;
+    // padding-left: 60px;
+    // padding-right: 60px;
+    // display: inline-block;
+    // float: left;
+    // font-size: 20px;
     -webkit-transition-property: background-color, box-shadow, line-height, height;
     transition-property: background-color, box-shadow, line-height, height;
     -webkit-transition-timing-function: cubic-bezier(.78,.13,.15,.86);
     transition-timing-function: cubic-bezier(.78,.13,.15,.86);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    a{
-      color: #E33B00;
-      text-decoration: none;
-    }
   }
   ul {
+    align-self: stretch;
     margin: 0;
-    text-transform: uppercase;
     li{
       text-align: center;
       display: inline-block;
       list-style: none;
       padding: 15px 15px;
-      cursor: pointer;
       line-height: 30px;
     }
   }
 }
 
 .sticky {
-    position: fixed !important;
-    top: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    line-height: 30px;
-    .marca{
-      line-height: 60px;
-    }
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 100%;
+  .marca{
+    line-height: 60px;
+  }
 }
 
-.pattern-overlay {
-    background: rgba(0,0,0,0.3);
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
 .btn-menu{
   display: none;
 }
@@ -117,11 +93,10 @@ html, body{
     }
   }
   .btn-menu{
-    display: block;
-    // outline: none;
-    position: relative;
-    // line-height: 60px;
-    float: left;
+    visibility: visible !important;
+    display: block !important;
+    // position: relative;
+    // float: left;
     left: 20px;
     top: 20px;
     width: 60px;
