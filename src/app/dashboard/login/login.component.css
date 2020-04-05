@@ -1,5 +1,5 @@
 section {
-    background: linear-gradient(225deg, #fff 0%, #9d9d99 90%);
+    background: linear-gradient(250deg, #999 0%, #f5f5f5 50%, #333 100%);
     width: 100%;
     height: 100vh;
 }
@@ -11,7 +11,7 @@ section {
     align-items: center;
     width: 100vw;
     min-height: 500px;
-    
+
 }
 .header {
     font-weight: 600;
@@ -20,7 +20,7 @@ section {
     height: 50px;
 }
 .content {
-    background-color: #dedede;
+    background-color: #fff;
     box-shadow: 3px 3px 10px #000;
     padding: 2rem;
     min-height: 250px;
@@ -29,12 +29,11 @@ section {
 .retur {
     margin-top: 1rem;
     display: block;
-    text-decoration: none;
     color: #000000;
     font-weight: 300;
     transition: ease-in 250ms;
 }
 .retur:hover {
-    color: rgb(160, 102, 102);
+    color:#9d9d9d;
 }
 
