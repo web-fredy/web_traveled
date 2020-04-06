@@ -3,6 +3,28 @@
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
 
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+
+
+$hamburger-padding-x           : 15px;
+$hamburger-padding-y           : 15px;
+$hamburger-layer-width         : 40px;
+$hamburger-layer-height        : 5px;
+$hamburger-layer-spacing       : 7px;
+$hamburger-layer-color         : #ddd;
+$hamburger-layer-border-radius : 5px;
+$hamburger-hover-opacity       : 0.5;
+$hamburger-active-layer-color  : $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+
+$hamburger-hover-use-filter   : false;
+$hamburger-hover-filter       : opacity(50%);
+$hamburger-active-hover-filter: $hamburger-hover-filter;
+@import 'assets/css/home/hamburgers/hamburgers.scss';
 @import 'assets/css/bootstrap/bootstrap.scss';
 @import 'assets/css/home/home.scss';
 
