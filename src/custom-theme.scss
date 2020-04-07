@@ -11,12 +11,12 @@ $theme-colors: (
 
 $hamburger-padding-x           : 15px;
 $hamburger-padding-y           : 15px;
-$hamburger-layer-width         : 40px;
-$hamburger-layer-height        : 5px;
+$hamburger-layer-width         : 35px;
+$hamburger-layer-height        : 4px;
 $hamburger-layer-spacing       : 7px;
 $hamburger-layer-color         : #ddd;
 $hamburger-layer-border-radius : 5px;
-$hamburger-hover-opacity       : 0.5;
+$hamburger-hover-opacity       : .90;
 $hamburger-active-layer-color  : $hamburger-layer-color;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity;
 
