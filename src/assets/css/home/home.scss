@@ -1,7 +1,20 @@
-html, body{
-  height: 100%;
-  min-height: 1000px;
-}
+$hamburger-padding-x           : 100px;
+$hamburger-padding-y           : 100px;
+$hamburger-layer-width         : 25px;
+$hamburger-layer-height        : 3px;
+$hamburger-layer-spacing       : 5px;
+$hamburger-layer-color         : #ddd;
+$hamburger-layer-border-radius : 0px;
+$hamburger-hover-opacity       : .90;
+$hamburger-active-layer-color  : $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+
+$hamburger-hover-use-filter   : false;
+$hamburger-hover-filter       : opacity(50%);
+$hamburger-active-hover-filter: $hamburger-hover-filter;
+
+
 .gradient {
   background-color: rgba($color: #343a40, $alpha: .85) !important;
 }
