@@ -15,21 +15,8 @@ $size: (
     auto: auto
 );
 
-$grid-breakpoints: (
-    xs: 321px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-);
-$container-max-widths: (
-    xs: 321px,
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-);
-
+$list-group-item-padding-y: .25rem !default;
+$list-group-item-padding-x: .25rem !default;
 
 $navbar-dark-color: #fff;
 $navbar-dark-hover-color: #eee;
