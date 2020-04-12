@@ -17,15 +17,6 @@
   // background-image: linear-gradient(0deg, rgba($color: red, $alpha: .25) 70%, rgba($color: blue,  $alpha: .25) 100%);
 }
 
-@media (min-width: 1024px) {
-  #hero .carousel-content {
-    width: 60%;
-  }
-  #hero .carousel-control-prev, #hero .carousel-control-next {
-    width: 5%;
-  }
-}
-
 @media (max-width: 992px) {
   #hero {
     height: calc(100vh - 72px);
@@ -35,22 +26,9 @@
   }
 }
 
-
-/*--------------------------------------------------------------
-# Seccion de Footer
---------------------------------------------------------------*/
-
-.home-footer {
-background-color: #343a40;
-padding: 1rem;
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #343a40;
+  }
 }
 
-.home-footer > .container {
-  color: #eee;
-}
-
-.home-footer > .container ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
