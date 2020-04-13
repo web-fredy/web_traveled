@@ -19,19 +19,15 @@ function plugin_home() {
   
     // Navbar scroll class
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 80) {
-        $('#navbar').addClass('gradient');
-
-        // $('#navbar').addClass('navbar-dark');
+      if ($(this).scrollTop() > 150) {
+        $('#navbar').removeClass('py-4');
       } else {
-        $('#navbar').removeClass('gradient');
-        
-        // $('#navbar').removeClass('navbar-dark');
+        $('#navbar').addClass('py-4');
       }
     });
   
-    if ($(window).scrollTop() > 80) {
-      $('#navbar').addClass('gradient');
+    if ($(window).scrollTop() > 150) {
+      $('#navbar').addClass('py-4');
     }
     
     // Hamburguer menu
