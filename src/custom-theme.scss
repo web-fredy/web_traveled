@@ -3,6 +3,22 @@
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
 
+$hamburger-padding-x           : 100px;
+$hamburger-padding-y           : 100px;
+$hamburger-layer-width         : 30px;
+$hamburger-layer-height        : 5px;
+$hamburger-layer-spacing       : 5px;
+$hamburger-layer-color         : #ff8800;
+$hamburger-layer-border-radius : 0px;
+$hamburger-hover-opacity       : .60;
+$hamburger-active-layer-color  : $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+
+$hamburger-hover-use-filter   : false;
+$hamburger-hover-filter       : opacity(50%);
+$hamburger-active-hover-filter: $hamburger-hover-filter;
+
 $size: (
 	5: 5%,
 	10: 10%,
@@ -15,6 +31,11 @@ $size: (
 	auto: auto
 );
 
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+
 $list-group-item-padding-y: .25rem !default;
 $list-group-item-padding-x: .25rem !default;
 
@@ -22,9 +43,10 @@ $navbar-dark-color: #fff;
 $navbar-dark-hover-color: #eee;
 $navbar-dark-active-color: #959595;
 
+$navbar-padding-y: .25rem;
+
 
 // Tema personalizado
-@import 'assets/css/home/thema.scss';
 @import 'assets/css/home/hamburgers/hamburgers.scss';
 @import 'assets/css/bootstrap/bootstrap.scss';
 @import 'assets/css/home/home.scss';
@@ -40,7 +62,7 @@ $navbar-dark-active-color: #959595;
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$web-traveled-primary: mat-palette($mat-indigo);
+$web-traveled-primary: mat-palette($mat-blue);
 $web-traveled-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
