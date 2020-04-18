@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Seccion de bavegacion
 --------------------------------------------------------------*/
-@import 'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Concert+One&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Quintessential&display=swap'; // Para titulos de cards
 .header {
   background-color: #444;
@@ -9,11 +9,10 @@
 }
 .navbar {
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
+  font-family: 'Concert One', cursive;
+  // letter-spacing: .150rem;
+  font-size: large;
 }
-
-
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -32,6 +31,7 @@
 #hero .carousel-item .content {
   text-align: left;
   padding: 1.50rem;
+  border-radius: .25rem;
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.50);
 }
