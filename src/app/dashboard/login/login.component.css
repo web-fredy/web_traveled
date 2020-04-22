@@ -1,24 +1,8 @@
 section {
-    background: linear-gradient(250deg, #999 0%, #f5f5f5 50%, #333 100%);
-}
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 .content {
-    width: 350px;
-}
-.retur {
-    margin-top: 1rem;
-    display: block;
-    color: #000000;
-    font-weight: 300;
-    transition: ease-in 250ms;
-}
-.retur:hover {
-    color:#9d9d9d;
+    width: 325px;
 }
 

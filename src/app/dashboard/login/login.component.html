@@ -1,23 +1,26 @@
-<section class="">
-    <form action="" class="form" autocomplete="off">
-        <div class="content bg-light shadow py-5 px-4">
-            <h1>Iniciar sesion</h1>
-            <div class="form-group">
-                <mat-form-field class="w-100">
-                    <mat-label>Usuario</mat-label>
-                    <input matInput name="user">
-                    <mat-icon matSuffix>perm_identity</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="form-group">
-                <mat-form-field class="w-100">
-                    <mat-label>Contraseña</mat-label>
-                    <input matInput name="password">
-                    <mat-icon matSuffix>lock</mat-icon>
-                </mat-form-field>
-            </div>
-            <button type="button" mat-raised-button color="primary" class="btn-block">Iniciar sesion</button>
-            <a routerLink="/home" class="retur">Regresar a la pagina de Inicio</a>
+<section class="d-flex flex-column">
+    <form action="" class="mx-auto mt-5" autocomplete="off">
+      <div class="content shadow px-4 py-5 rounded">
+          <h3 class="mb-3 text-center">AUTENTICARSE</h3>
+          <!-- <div class="form-group"> -->
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Usuario</mat-label>
+                  <input matInput name="user">
+                  <mat-icon matSuffix>perm_identity</mat-icon>
+              </mat-form-field>
+          <!-- </div> -->
+          <!-- <div class="form-group"> -->
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Contraseña</mat-label>
+                  <input matInput name="password">
+                  <mat-icon matSuffix>lock</mat-icon>
+              </mat-form-field>
+          <!-- </div> -->
+          <button type="button" mat-raised-button color="primary" class="w-100 p-2">Iniciar sesion</button>
         </div>
-    </form>
+      </form>
+      <div class="mx-auto mt-3">
+        Regresar a la pagina
+        <a routerLink="/home">principal</a>
+      </div>
 </section>
