@@ -1,26 +1,21 @@
 <section class="d-flex flex-column">
-    <form action="" class="mx-auto mt-5" autocomplete="off">
-      <div class="content shadow px-4 py-5 rounded">
-          <h3 class="mb-3 text-center">AUTENTICARSE</h3>
-          <!-- <div class="form-group"> -->
-              <mat-form-field appearance="outline" class="w-100">
-                  <mat-label>Usuario</mat-label>
-                  <input matInput name="user">
-                  <mat-icon matSuffix>perm_identity</mat-icon>
-              </mat-form-field>
-          <!-- </div> -->
-          <!-- <div class="form-group"> -->
-              <mat-form-field appearance="outline" class="w-100">
-                  <mat-label>Contraseña</mat-label>
-                  <input matInput name="password">
-                  <mat-icon matSuffix>lock</mat-icon>
-              </mat-form-field>
-          <!-- </div> -->
-          <button type="button" mat-raised-button color="primary" class="w-100 p-2">Iniciar sesion</button>
-        </div>
-      </form>
-      <div class="mx-auto mt-3">
-        Regresar a la pagina
-        <a routerLink="/home">principal</a>
-      </div>
+  <form action="" class="shadow p-4 rounded mx-auto mt-5" autocomplete="off" style="max-width: 325px;">
+    <h3 class="mb-3 text-center">Iniciar sesion</h3>
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Usuario</mat-label>
+      <input type="text" matInput name="user">
+      <mat-icon matSuffix>perm_identity</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput name="password">
+      <mat-icon matSuffix>lock</mat-icon>
+    </mat-form-field>
+    <button type="button" mat-raised-button color="primary" class="w-100 p-2" style="font-size: 16px;letter-spacing: 1px;">Iniciar sesion</button>
+  </form>
+  <div class="mx-auto mt-3">
+    Regresar a la
+    <a routerLink="/home">pagina</a>
+    principal
+  </div>
 </section>
