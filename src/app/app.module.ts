@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './share/home/home.component';
@@ -19,6 +24,10 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatListModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
     BrowserAnimationsModule,
     NgxPageScrollCoreModule,
     NgxPageScrollModule
