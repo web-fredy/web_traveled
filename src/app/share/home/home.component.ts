@@ -1,5 +1,4 @@
-import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
-import { PageScrollService } from 'ngx-page-scroll-core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 declare function plugin_home(): any;
@@ -10,17 +9,10 @@ declare function plugin_home(): any;
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  constructor(
-    private pageScrollService: PageScrollService,
-    @Inject(DOCUMENT) private document: any
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
     plugin_home();
-    this.pageScrollService.scroll({
-      document: this.document,
-      scrollTarget: '.theEnd',
-    });
   }
 
   ngOnDestroy(): void {

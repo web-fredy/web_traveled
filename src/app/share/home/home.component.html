@@ -11,7 +11,7 @@
     </div>
   </div>
 </header>
-<nav id="navbar" class="navbar navbar-expand-md sticky-top navbar-light bg-light shadow py-4" style="transition: all 500ms ease;">
+<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow py-4" style="transition: all 500ms ease;">
   <a class="navbar-brand">Marca</a>
   <button
     type="button"
@@ -29,19 +29,22 @@
   <div id="navegacion" class="collapse navbar-collapse">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a pageScroll class="nav-link" href="#top">Inicio</a>
+        <a [ngxScrollTo]="'#top'" class="nav-link" href="javascript:void(0)">Inicio</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" href="#equipo">Nuestro equipo</a>
+        <a [ngxScrollTo]="'#nosotros'" class="nav-link" href="javascript:void(0)">Sobre nosotros</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" href="#contacto">Contactenos</a>
+        <a [ngxScrollTo]="'#equipo'" class="nav-link" href="javascript:void(0)">Nuestro equipo</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" href="#servicio">Servicios</a>
+        <a [ngxScrollTo]="'#contacto'" class="nav-link" href="javascript:void(0)">Contactenos</a>
       </li>
       <li class="nav-item">
-        <a pageScroll class="nav-link" href="#transportes">Transportes</a>
+        <a [ngxScrollTo]="'#servicio'" class="nav-link" href="javascript:void(0)">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a [ngxScrollTo]="'#transportes'" class="nav-link" href="javascript:void(0)">Transportes</a>
       </li>
     </ul>
   </div>
@@ -109,25 +112,48 @@
   </div>
 </div>
 
-<section id="equipo" class="container">
-
-</section>
-<section class="container pt-3">
-
-</section>
-<section class="container pt-3">
-</section>
-<section class="container pt-3">
-</section>
-<section class="container pt-3">
-</section>
-<section class="container pt-3">
-</section>
-<section class="container pt-3">
+<section class="my-4" id="nosotros">
+  <div class="container">
+    <h2 class="">Sobre nosotros</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/800x500" alt="" class="w-100">
+      </div>
+      <div class="col-md-6">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <h5>Mision</h5>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem at mollitia omnis quae cupiditate minus qui distinctio autem sapiente quis, iste harum adipisci, ea animi asperiores delectus laudantium, recusandae fugit deserunt. Nemo omnis atque officia eius sint? Fuga, est dicta!
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <h5>Vision</h5>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem rem illum amet debitis, soluta eos hic. Adipisci corrupti voluptas, qui fugit autem modi accusantium molestias rerum architecto officia sit? Ex exercitationem quod possimus eius laudantium reiciendis. Optio, sint quasi a praesentium quam commodi nobis beatae eaque nesciunt inventore sit, eum reprehenderit ullam, voluptatem unde quos doloremque fuga maiores minus.
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <h5>Valores</h5>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptate corporis saepe veritatis, iusto voluptatem voluptates minus aperiam delectus voluptas, eum deserunt quibusdam doloribus consequuntur soluta? Sint ratione, repellendus quos eum commodi veritatis voluptate, delectus ipsa exercitationem amet ipsam placeat. Repellendus impedit aperiam nobis. Minus, nulla temporibus. Quasi natus numquam architecto quibusdam dolor quas voluptatem.
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="my-4" id="equipo">
   <div class="container">
+    <h2>Nuestro equipo</h2>
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-6 mb-3" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
         <div class="card border-light shadow">
@@ -180,8 +206,9 @@
 
 <section class="my-4" id="contacto">
   <div class="container">
+    <h2>Contactenos</h2>
     <div class="row">
-      <div class="col-lg-5 col-md-6 mb-3" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+      <div class="col-lg-5 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <div class="card">
           <div class="card-body">
             <mat-list>
@@ -207,7 +234,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7 col-md-6 mb-3" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+      <div class="col-lg-7 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Contactenos</h5>
