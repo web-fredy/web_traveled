@@ -28,23 +28,17 @@
 
   <div id="navegacion" class="collapse navbar-collapse">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a [ngxScrollTo]="'#top'" class="nav-link" href="javascript:void(0)">Inicio</a>
       </li>
       <li class="nav-item">
-        <a [ngxScrollTo]="'#nosotros'" class="nav-link" href="javascript:void(0)">Sobre nosotros</a>
+        <a [ngxScrollTo]="'#nosotros'"  class="nav-link" href="javascript:void(0)">Sobre nosotros</a>
       </li>
       <li class="nav-item">
         <a [ngxScrollTo]="'#equipo'" class="nav-link" href="javascript:void(0)">Nuestro equipo</a>
       </li>
       <li class="nav-item">
         <a [ngxScrollTo]="'#contacto'" class="nav-link" href="javascript:void(0)">Contactenos</a>
-      </li>
-      <li class="nav-item">
-        <a [ngxScrollTo]="'#servicio'" class="nav-link" href="javascript:void(0)">Servicios</a>
-      </li>
-      <li class="nav-item">
-        <a [ngxScrollTo]="'#transportes'" class="nav-link" href="javascript:void(0)">Transportes</a>
       </li>
     </ul>
   </div>
@@ -112,16 +106,18 @@
   </div>
 </div>
 
-<section class="my-4" id="nosotros">
+<section class="my-4" >
   <div class="container">
-    <h2 class="">Sobre nosotros</h2>
+    <div id="nosotros" class="text-center" data-aos="zoom-out-down" data-aos-anchor-placement="center-bottom">
+      <h2>Sobre nosotros</h2>
+    </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
         <img src="https://via.placeholder.com/800x500" alt="" class="w-100">
       </div>
       <div class="col-md-6">
         <mat-accordion>
-          <mat-expansion-panel>
+          <mat-expansion-panel data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <mat-expansion-panel-header>
               <mat-panel-description>
                 <h5>Mision</h5>
@@ -129,7 +125,7 @@
             </mat-expansion-panel-header>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem at mollitia omnis quae cupiditate minus qui distinctio autem sapiente quis, iste harum adipisci, ea animi asperiores delectus laudantium, recusandae fugit deserunt. Nemo omnis atque officia eius sint? Fuga, est dicta!
           </mat-expansion-panel>
-          <mat-expansion-panel>
+          <mat-expansion-panel data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <mat-expansion-panel-header>
               <mat-panel-description>
                 <h5>Vision</h5>
@@ -137,7 +133,7 @@
             </mat-expansion-panel-header>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem rem illum amet debitis, soluta eos hic. Adipisci corrupti voluptas, qui fugit autem modi accusantium molestias rerum architecto officia sit? Ex exercitationem quod possimus eius laudantium reiciendis. Optio, sint quasi a praesentium quam commodi nobis beatae eaque nesciunt inventore sit, eum reprehenderit ullam, voluptatem unde quos doloremque fuga maiores minus.
           </mat-expansion-panel>
-          <mat-expansion-panel>
+          <mat-expansion-panel data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <mat-expansion-panel-header>
               <mat-panel-description>
                 <h5>Valores</h5>
@@ -151,9 +147,11 @@
   </div>
 </section>
 
-<section class="my-4" id="equipo">
+<section class="my-4">
   <div class="container">
-    <h2>Nuestro equipo</h2>
+    <div id="equipo" class="text-center" data-aos="zoom-out-down" data-aos-anchor-placement="center-bottom">
+      <h2>Nuestro equipo</h2>
+    </div>
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-6 mb-3" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">
         <div class="card border-light shadow">
@@ -204,11 +202,13 @@
   </div>
 </section>
 
-<section class="my-4" id="contacto">
+<section class="my-4">
   <div class="container">
-    <h2>Contactenos</h2>
+    <div id="contacto" class="text-center" data-aos="zoom-out-down" data-aos-anchor-placement="center-bottom">
+      <h2>Contactenos</h2>
+    </div>
     <div class="row">
-      <div class="col-lg-5 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+      <div class="col-lg-5 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
         <div class="card">
           <div class="card-body">
             <mat-list>
@@ -234,7 +234,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+      <div class="col-lg-7 col-md-6 mb-3" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Contactenos</h5>
